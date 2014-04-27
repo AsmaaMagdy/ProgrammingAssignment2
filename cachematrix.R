@@ -2,7 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## Input to makeCacheMatrix function is a matrix variable
+## define get, and set functions
+## getInverse and setInverse functions use the "solve" R function
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -20,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## cachsolve function calculate the inverse of the matrix
+## Returns the cached values if exists.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getInverse()
